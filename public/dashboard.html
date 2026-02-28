@@ -1,0 +1,39 @@
+<div class="container py-4">
+
+  <h2 class="mb-3">Admin Dashboard</h2>
+
+  <!-- Filters -->
+  <div class="row mb-3">
+    <div class="col-md-3">
+      <input id="keyword" class="form-control" placeholder="Search..." />
+    </div>
+
+    <div class="col-md-3">
+      <input type="date" id="startDate" class="form-control" />
+    </div>
+
+    <div class="col-md-3">
+      <input type="date" id="endDate" class="form-control" />
+    </div>
+
+    <div class="col-md-3">
+      <button class="btn btn-dark w-100" onclick="loadDashboard()">
+        Apply Filters
+      </button>
+    </div>
+  </div>
+
+  <!-- Table -->
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Date</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="dashboardTable"></tbody>
+  </table>
+
+</div>

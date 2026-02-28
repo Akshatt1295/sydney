@@ -1,0 +1,126 @@
+/*  GLOBAL  */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/*  PAGE TITLE  */
+
+h1, h2 {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+/*  EVENT CARD  */
+
+.card {
+  border: none;
+  border-radius: 18px;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+
+/* smooth hover lift */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+}
+
+/*  CARD IMAGE  */
+
+.card-img-top {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  object-fit: cover;
+}
+
+/*  CARD BODY  */
+
+.card-body {
+  padding: 1.2rem;
+}
+
+.card-title {
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/*  BUTTON  */
+
+.btn-dark {
+  border-radius: 10px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: all 0.2s ease;
+}
+
+.btn-dark:hover {
+  transform: scale(1.03);
+}
+
+/*  BADGES (Dashboard)  */
+
+.badge {
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 8px;
+  text-transform: capitalize;
+}
+
+/* status colors for extra polish */
+.badge-new {
+  background-color: #0d6efd;
+}
+
+.badge-updated {
+  background-color: #fd7e14;
+}
+
+.badge-inactive {
+  background-color: #6c757d;
+}
+
+.badge-imported {
+  background-color: #198754;
+}
+
+/*  TABLE (Dashboard)  */
+
+.table {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.table thead {
+  background: #111;
+  color: white;
+}
+
+/*  MODAL  */
+
+.modal-content {
+  border-radius: 16px;
+  border: none;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+/* RESPONSIVE IMPROVEMENTS  */
+
+@media (max-width: 768px) {
+  .card:hover {
+    transform: none; 
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}
